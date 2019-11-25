@@ -10,3 +10,10 @@
   padding: 20px 0;
   /*font-size: 20px;*/
 }
+
+P.drop-cap:first-letter {
+  font-size: 40px;
+  float:left;
+  line-height: 0.85em;
+  font-family: Georgia, serif;
+}
