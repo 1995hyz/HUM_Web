@@ -2,10 +2,3 @@ body {
     background-color: #101010;
     color: #ffffff;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 500px 700px auto;
-    grid-gap: 10px;
-    padding: 10px;
-}
