@@ -16,6 +16,7 @@ body {
     letter-spacing: 0.1em;
     margin-left: 2em;
     margin-right: 2em;
+    cursor: pointer;
 }
 
 .bottom_button_lucky {
@@ -31,4 +32,5 @@ body {
     letter-spacing: 0.1em;
     margin-left: 2em;
     margin-right: 2em;
+    cursor: pointer;
 }
