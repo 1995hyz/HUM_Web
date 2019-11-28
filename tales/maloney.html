@@ -43,7 +43,7 @@
 <div class="grid-container">
     <div> <!-- Empty to keep space --></div>
     <div>
-        <img src="../img/Zekiel_illustration.jpg" alt="Zekiel_illustration" style='height: 100%; width: 100%; object-fit: contain'>
+        <!--<img src="../img/Zekiel_illustration.jpg" alt="Zekiel_illustration" style='height: 100%; width: 100%; object-fit: contain'>-->
         <h2 style="text-align:center;"> The Vision of the Twelve Jewels </h2>
         <h4 style="text-align:center;"> <i> Zekiel Maloney </i> </h4>
         <p class="drop-cap">
@@ -167,10 +167,19 @@
             <button type="button" class="bottom_button_lucky" value="maloney" onclick="random_url(this.value)">Feeling Lucky!</button>
         </div>
     </div>
-    <div><!-- Empty to keep space --></div>
+    <div>
+        <div class="theme-switch-wrapper">
+            <p>Enable Dark Mode!&emsp;</p>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox"/>
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
 
 </div>
 <script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/lucky_button.js"></script>
+<script type="text/javascript" src="../js/darkMode.js"></script>
 </body>
 </html>

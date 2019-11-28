@@ -1,13 +1,30 @@
+:root {
+    --back-color: #ffffff;
+    --nav-button-color: #a6ded9;
+    --lucky-button-color: #faa2f8;
+    --font-color: #101010;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --back-color: #101010;
+    --nav-button-color: #10ebbf;
+    --lucky-button-color: #e610e2;
+    --font-color: #ffffff;
+    --heading-color: #818cab;
+}
+
+
 body {
-    background-color: #101010;
-    color: #ffffff;
+    background-color: var(--back-color);
+    color: var(--font-color);
 }
 
 .bottom_button {
     margin-top: 5em;
     border-radius: 0.5em;
-    background-color: #e610e2;
-    border: 2px solid #e610e2;
+    background-color: var(--nav-button-color);
+    border: 2px solid var(--nav-button-color);
     width: 22%;
     height:2.2em;
     color: #101010;
@@ -22,8 +39,8 @@ body {
 .bottom_button_lucky {
     margin-top: 5em;
     border-radius: 0.5em;
-    background-color: #10ebbf;
-    border: 2px solid #10ebbf;
+    background-color: var(--lucky-button-color);
+    border: 2px solid var(--lucky-button-color);
     width: 22%;
     height:2.2em;
     color: #101010;
@@ -33,4 +50,63 @@ body {
     margin-left: 2em;
     margin-right: 2em;
     cursor: pointer;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 9em;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 1.8em;
+    position: relative;
+    width: 3.2em;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 0.11em;
+    content: "";
+    height: 1.6em;
+    left: 0.15em;
+    position: absolute;
+    transition: .4s;
+    width: 1.6em;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.35em);
+}
+
+.slider.round {
+    border-radius: 2em;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.theme-switch-wrapper p {
+    font-style: italic
 }

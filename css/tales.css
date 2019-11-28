@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: auto 700px auto;
+  grid-template-columns: calc((100% - 700px) / 2) 700px calc((100% - 700px) / 2);
   grid-gap: 10px;
   padding: 10px;
 }
