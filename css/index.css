@@ -10,6 +10,7 @@ body {
   overflow: hidden;
   background-color: #333;
   top:0;
+  position:sticky;
 }
 
 .navbar a {
@@ -48,12 +49,6 @@ body {
 }
 
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
 .sidebar {
 	height:100%;
 	width:400px;
@@ -63,6 +58,7 @@ body {
 	right:0;
 	background-color:#333;
 }
+
 #linksSideBar {
 	padding-top:50px;
 }
@@ -78,6 +74,7 @@ body {
   color: #f1f1f1;
   border-style:solid;
   font-weight:bold;
+  background-color:red;
 }
 
 
