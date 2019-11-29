@@ -1,5 +1,5 @@
 const links = [
-    "abbitan", "bar", "carroll_warhola", "chen", "cosinuke",
+    "intro", "abbitan", "bar", "carroll_warhola", "chen", "cosinuke",
     "ferris", "fu", "hao", "kohli", "krasniqi",
     "liu", "maloney", "mapa", "pan", "patel",
     "pedoeem", "shah", "toy", "wilborn"
