@@ -140,38 +140,44 @@
          });
       </script>
 	</head>
-	<body>		
-		<div class="navbar">			
-			<!-- <t> Heads and Tales </t> -->
-			<a href="./index.html"> Heads & Tales</a>
-			<a href="./about.html">About</a>
-			<div class="dropdown">
-				<button class="dropbtn">Tales 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="./tales/abbitan.html">Original Fairy Tale, <i>Shifra Abittan</i></a>
-					<a href="./tales/bar.html">Taylor the Carpenter, <i>Guy Bar Yosef</i></a>
-					<a href="./tales/carroll_warhola.html">As Above So Below, <i>Oonagh Carrol-Warhola</i></a>
-					<a href="./tales/chen.html">, <i>Will Chen</i></a>
-					<a href="./tales/cosinuke.html">Farra, the Blue Roan and her Husband-Child, <i>Willa L. Cosinuke</i></a>
-					<a href="./tales/ferris.html">, <i>Kiani Ferris</i></a>
-					<a href="./tales/fu.html">The Eyes & Hands of Old Jeptha, <i>Dayi Fu</i></a>
-					<a href="./tales/hao.html">The Musician's House, <i>Yingzhi Hao</i></a>
-					<a href="./tales/kohli.html">The Tale of Biko, <i>Armaan Kohli</i></a>
-					<a href="./tales/krasniqi.html">A Thief's Crown, <i>Leart Krasniqi</i></a>
-					<a href="./tales/liu.html">The Girl Who Didn't Become a Hero, <i>Zhen Liu</i></a>
-					<a href="./tales/maloney.html">Vision of the Twelve Jewels, First Letter, <i>Zekiel A. Maloney</i></a>
-					<a href="./tales/mapa.html">My Yaya is Turning into an Aswang, <i>Felipe P. Mapa</i></a>
-					<a href="./tales/pan.html">The Land to the North, <i>Amy Pan</i></a>
-					<a href="./tales/patel.html">Fruits of Maah, <i>Timil Patel</i></a>
-					<a href="./tales/pedoeem.html">Josh and the Magical CD Player, <i>Jonathan Pedoeem</i></a>
-					<a href="./tales/wilborn.html">, <i>Johnathan Wilborn</i></a>
-					<a href="./tales/shah.html">The Hungry Girl, <i>Dhvanil Shah</i></a>
-					<a href="./tales/toy.html">Restless and Complacent, <i>Caren M. Toy</i></a>	
-				</div>
-			</div> 
+	<body>
+	<div class="navbar" id="navbar">
+		<!-- <t> Heads and Tales </t> -->
+		<a href="../index.html"> Heads & Tales</a>
+		<a href="../about.html">About</a>
+
+		<button id="menu" class="dropbtn" onclick="openSide()">
+			<i class="fa fa-bars"></i>
+		</button>
+
+	</div>
+
+	<div class="sidebar" id="mySidebar" style="display:none">
+		<button id="menu" class="dropbtn" onclick="closeSide()">
+			<i class="fa fa-bars"></i>
+		</button>
+		<div id ="linksSideBar">
+			<a href="./tales/abbitan.html">Original Fairy Tale, Shifra Abittan</a>
+			<a href="./tales/bar.html">Taylor the Carpenter, Guy Bar Yosef</a>
+			<a href="./tales/carroll_warhola.html">As Above So Below, Oonagh Carrol-Warhola</a>
+			<a href="./tales/chen.html">, Will Chen</a>
+			<a href="./tales/cosinuke.html">Farra, the Blue Roan and her Husband-Child, Willa L. Cosinuke</a>
+			<a href="./tales/ferris.html">, Kiani Ferris</a>
+			<a href="./tales/fu.html">The Eyes & Hands of Old Jeptha, Dayi Fu</a>
+			<a href="./tales/hao.html">The Musician's House, Yingzhi Hao</a>
+			<a href="./tales/kohli.html">The Tale of Biko, Armaan Kohli</a>
+			<a href="./tales/krasniqi.html">A Thief's Crown, Leart Krasniqi</a>
+			<a href="./tales/liu.html">The Girl Who Didn't Become a Hero, Zhen Liu</a>
+			<a href="./tales/maloney.html">Vision of the Twelve Jewels, First Letter, Zekiel A. Maloney</a>
+			<a href="./tales/mapa.html">My Yaya is Turning into an Aswang, Felipe P. Mapa</a>
+			<a href="./tales/pan.html">The Land to the North, Amy Pan</a>
+			<a href="./tales/patel.html">Fruits of Maah, Timil Patel</a>
+			<a href="./tales/pedoeem.html">Josh and the Magical CD Player, Jonathan Pedoeem</a>
+			<a href="./tales/wilborn.html">, Johnathan Wilborn</a>
+			<a href="./tales/shah.html">The Hungry Girl, Dhvanil Shah</a>
+			<a href="./tales/toy.html">Restless and Complacent, Caren M. Toy</a>
 		</div>
+	</div>
 		<h3> A fairy tale experience brought to you by the <a href="https://cooper.edu/humanities/curriculum/courses/hum-243/fairy-tale"> <i>HUM-243</i> </a> class and <a href="https://cooper.edu/humanities/people/harold-ramdass"> <i>Professor Harold N. Ramdass</i> </a></h3>
 		<p> Choose where to begin your journey:</p>
 		<!-- Original width and height of svg -- width="5376" height="4032" (changed to 20% (w=1075,h=806) to fit better) -->
@@ -343,7 +349,10 @@
 					<path d="m 4764.2264,2743.4717 -104.6038,71.3208 118.868,166.415 171.1698,4.7548 99.849,-104.6038 v -71.3208 l -147.3962,-76.0754 z" id="path80" inkscape:connector-curvature="0" title="yilun"/>
 				</a>
 			</g>
-		</svg>	
+		</svg>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/lucky_button.js"></script>
+	<script type="text/javascript" src="../js/darkMode.js"></script>
 	</body>
 </html>
 

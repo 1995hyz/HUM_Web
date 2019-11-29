@@ -55,7 +55,7 @@ body {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    margin-left: 9em;
+    margin-left: calc(100% / 8);
 }
 
 .theme-switch {
