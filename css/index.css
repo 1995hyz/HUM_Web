@@ -58,6 +58,7 @@ body {
 	top:0;
 	right:0;
 	background-color:#333;
+    overflow-y: scroll;
 }
 
 #linksSideBar {
