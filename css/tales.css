@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  margin:0;
+}
 .grid-container {
   display: grid;
   grid-template-columns: calc((100% - 700px) / 2) 700px calc((100% - 700px) / 2);
@@ -17,3 +21,97 @@ P.drop-cap:first-letter {
   line-height: 0.85em;
   font-family: Georgia, serif;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  top:0;
+  position:sticky;
+  z-index:1;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px; /* 16*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Used for title only */
+.navbar t {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropbtn {
+  font-size: 20px; /* 16 */ 
+  float: right;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+.sidebar {
+	height:100%;
+	width:400px;
+	position:fixed;
+	z-index:1;
+	top:0;
+	right:0;
+	background-color:#333;
+    overflow-y: scroll;
+}
+
+#linksSideBar {
+	padding-top:50px;
+}
+.sidebar a {
+  font-size:1em;
+  padding: 10px 8px 10px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  border-style:solid;
+  font-weight:bold;
+  background-color:red;
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
