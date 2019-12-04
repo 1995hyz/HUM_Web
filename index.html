@@ -76,14 +76,17 @@ div.b-mobile {display:none;}
             
             /* Dhvanil (5) */
             $( "#path35" ).tooltip({
-              content: "<strong> Dhvanil  </strong> <br> text",
+              content: "<strong> The Hungry Girl </strong>- Dhvanil Shah <br> A story about a kind, sweet princess.<br> Nothing suspicious here...",
               track: true
             });
 
             /* Pepe (6) */
             $( "#path38" ).tooltip({
-              content: "<strong> Pepe  </strong> <br> text",
-              track: true
+              content: "<strong> My Yaya is Turning into an Aswang </strong> - Pepe Mapa <br> A little boy sets out to cure Yaya, his live-in caregiver, from her so-called sickness that would transform her into an <i>aswang</i> - a fearsome shapeshifter of Philippine folklore.",
+              track: true,
+              open: function (event, ui) {
+        		ui.tooltip.css("max-width", "50%");
+    		  }
             });
 
             /* Kiani (7) */
@@ -100,14 +103,17 @@ div.b-mobile {display:none;}
 
             /* Dayi (9) */
             $( "#path47" ).tooltip({
-              content: "<strong> Dayi </strong> <br> text",
+              content: "<strong> The Eyes & Hands of Old Jeptha </strong> - Dayi Tofu <br> Ever wanted to kill your horrible parents?",
               track: true
             });
 
             /* Zeke (10) */
             $( "#path50" ).tooltip({
-              content: "<strong> Zeke </strong> <br> text",
-              track: true
+              content: "<strong> Vision of the Twelve Jewels, First Letter </strong> - Zekiel Maloney <br> This is the account of an anonymous figure who was chosen to witness the origins of the Twelve Jewels, the first rulers of the Lower Realm",
+              track: true,
+              open: function (event, ui) {
+        		ui.tooltip.css("max-width", "40%");
+    		  }
             });
 
             /* Oonagh (11) */
@@ -286,8 +292,8 @@ div.b-mobile {display:none;}
     <div> <!-- Empty to keep space -->	</div>
     <div style="height: 100vh; ">
     	
-		<h3 style="color:white; margin-top: 25%; text-align: center"> A fairy tale experience brought to you by the Fall 2019 <a class="cooper_link" href="https://cooper.edu/humanities/curriculum/courses/hum-243/fairy-tale" > <i>HUM-243</i> </a> class <br> and <a class="cooper_link" href="https://cooper.edu/humanities/people/harold-ramdass"> <i>Professor Harold N. Ramdass</i> </a></h3>
-		<p style="color:white; text-align: center;"> Open the map and choose where to begin your journey: </p>
+		<h3 style="color:white; margin-top: 20vh; text-align: center; font-size: 6vh;"> A fairy tale experience brought to you by the <br> Fall 2019 <a class="cooper_link" href="https://cooper.edu/humanities/curriculum/courses/hum-243/fairy-tale" > <i>HUM-243</i> </a> class <br> and <a class="cooper_link" href="https://cooper.edu/humanities/people/harold-ramdass"> <i>Professor Harold N. Ramdass</i> </a></h3>
+		<p style="color:white; text-align: center; font-size: 3vh;"> Open the map and choose where to begin your journey: </p>
 		    
 		<!-- Trigger/Open The Modal -->
 		<div style="text-align: center";>
